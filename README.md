@@ -27,6 +27,7 @@ Designed for robust forecasting to guide inventory and promotion planning.
 
 
 Usage
+
 Requires Python and Jupyter Notebook environment.
 
 Libraries: pandas, numpy, scikit-learn, xgboost, seaborn, matplotlib, tensorflow/keras.
@@ -36,6 +37,7 @@ To run, open the notebook and execute cells sequentially, ensuring all dependenc
 Includes code for data preparation, model training, and visual analysis of predictions.
 
 Project Structure
+
 Data ingestion and preprocessing.
 
 Exploratory Data Analysis (EDA).
@@ -47,6 +49,7 @@ Model development with Random Forest, XGBoost, and LSTM.
 Model evaluation and result visualization.
 
 Results
+
 Random Forest and XGBoost both show high accuracy for sales forecasting, with LSTM providing an alternative sequence-based approach.
 
 Feature importance analysis reveals ‘revenue per unit’ and ‘discount percentage’ as key drivers in sales predictions.
