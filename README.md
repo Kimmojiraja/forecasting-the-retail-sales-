@@ -14,12 +14,7 @@ XGBoost Regression
 
 LSTM-based Deep Learning
 
-Compares and evaluates models using metrics such as MSE, MAE, and 
-R
-2
-R 
-2
-  score.
+Compares and evaluates models using metrics such as MSE, MAE, and R^2_score.
 
 Highlights feature importance for actionable business insights.
 
