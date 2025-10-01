@@ -26,7 +26,7 @@ Highlights feature importance for actionable business insights.
 Designed for robust forecasting to guide inventory and promotion planning.
 
 
-Usage
+usage
 
 Requires Python and Jupyter Notebook environment.
 
