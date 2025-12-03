@@ -1,53 +1,28 @@
-# Sales Forecasting Using Machine Learning and Deep Learning Techlologies 
+# Embedding-Based Deep Neural Network for Weekly Sales Forecasting 
 
-This project demonstrates a comprehensive approach for predicting weekly unit sales using machine learning and deep learning techniques. The workflow includes data preprocessing, feature engineering, exploratory data analysis, and the implementation and evaluation of several predictive models. The key objectives are to analyze historical sales data, uncover feature importance, and provide accurate forecasting for business decision support.
-Key Features
-Cleans and processes transactional sales data containing store-level and SKU-level information.
+## 1. Project Overview
+This project focuses on forecasting weekly sales for retail products using an Embedding-Based Deep Neural Network. The system predicts units sold for each SKU-store combination, supporting decisions in demand planning, inventory management, and pricing strategy.
 
-Explores weekly and store-wise trends in sales and revenue using data visualization.
+## 2. Problem Statement
+Traditional forecasting models struggle to generalize across thousands of products and stores that exhibit different patterns. This leads to inaccurate predictions and ineffective stock planning.
+This project aims to build a scalable deep learning model that improves prediction accuracy and adapts to changing sales behaviour
 
-## Implements multiple predictive models:
+## 3. Dataset
+The dataset contains weekly transactional sales data including product details, store IDs, prices, discount information, and promotional indicators. Lag features, rolling averages, and temporal features were engineered to enhance learning.
 
-Random Forest Regression
+## 4. Methodology
+The approach includes data preprocessing, feature engineering, log transformation for stability, and model training. The deep learning model uses categorical embeddings with dense layers to capture store- and product-level patterns. Benchmark models (Random Forest and XGBoost) were used for comparison.
 
-XGBoost Regression
+## 5. Model Used
+Embedding-Based Deep Neural Network
 
-LSTM-based Deep Learning
+Adam optimizer and early stopping to prevent overfitting
 
-Compares and evaluates models using metrics such as MSE, MAE, and R^2_score.
+ReLU activation, dropout, batch normalization
 
-Highlights feature importance for actionable business insights.
+## 6. Results
+The model achieved high forecasting accuracy and closely matched real sales patterns in visual validation. It performed competitively against traditional ML models, with improved scalability and interpretability.
 
-Designed for robust forecasting to guide inventory and promotion planning.
-
-
-## usage
-
-Requires Python and Jupyter Notebook environment.
-
-Libraries: pandas, numpy, scikit-learn, xgboost, seaborn, matplotlib, tensorflow/keras.
-
-To run, open the notebook and execute cells sequentially, ensuring all dependencies are installed.
-
-Includes code for data preparation, model training, and visual analysis of predictions.
-
-## Project Structure
-
-Data ingestion and preprocessing.
-
-Exploratory Data Analysis (EDA).
-
-Feature engineering for regression tasks.
-
-Model development with Random Forest, XGBoost, and LSTM.
-
-Model evaluation and result visualization.
-
-## Results
-
-Random Forest and XGBoost both show high accuracy for sales forecasting, with LSTM providing an alternative sequence-based approach.
-
-Feature importance analysis reveals ‘revenue per unit’ and ‘discount percentage’ as key drivers in sales predictions.
-
-Visualizations and prediction plots provide business insights for scaling or optimizing sales strategies.
+## Conclusion 
+The embedding-based DNN effectively predicts weekly sales by learning complex interactions among price, promotions, and time patterns. It offers a robust solution for retail forecasting and can be deployed for automated real-time decision support.
 
